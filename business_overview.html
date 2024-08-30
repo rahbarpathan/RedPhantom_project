@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Online Version / CDN Version -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" href="images/">
+  <title> </title>
+</head>
+<style>
+  body {
+    overflow-y: hidden !important;
+    scroll-behavior: smooth;
+  }
+
+  main {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media screen and(max-width:520px) {
+    .nav-line {
+      display: none;
+    }
+  }
+
+  .back_sud_text {
+    opacity: 0.08;
+    rotate: 270deg;
+    font-size: 150%;
+    position: absolute;
+    bottom: 50%;
+    left: -30%;
+  }
+
+  @media screen and(max-width:520px) {
+    .back_sud_text {
+      font-size: 270%;
+      bottom: 50%;
+      left: -20%;
+    }
+  }
+
+  @media(min-width:992px) {
+    .back_sud_text {
+      font-size: 270%;
+      bottom: 50%;
+      left: -10%;
+    }
+
+  }
+
+
+  .back_2020_text {
+    opacity: 0.08;
+    rotate: 90deg;
+    font-size: 300%;
+    position: absolute;
+    right: -3%;
+    bottom: 25%;
+  }
+
+  @media(min-width:992px) {
+    .back_2020_text {
+
+      font-size: 700%;
+      right: 8%;
+    }
+  }
+
+  .pos_of_circle {
+    position: absolute;
+    right: 35%;
+    bottom: 2%;
+  }
+
+  .circle_image1 {
+    width: 80%;
+  }
+
+  @media(min-width:768px) {
+    .circle_image1 {
+      width: 180%;
+    }
+
+    .arrow_right {
+      position: absolute;
+      bottom: 4%;
+      right: 11%;
+      transform: translate(-50%, -50%);
+      transform: rotate(360deg);
+      cursor: pointer;
+    }
+
+  }
+
+  @media(min-width:992px) {
+    .circle_image1 {
+      width: 200%;
+    }
+  }
+
+  @media(min-width:320px) {
+    .nav-line {
+      display: none;
+    }
+  }
+
+  @media(min-width:992px) {
+    .nav-line {
+      display: block;
+    }
+  }
+</style>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!------------------- NAVBAR ------------------->
+  <header id="header">
+    <div class="logo-container">
+      <a href="./index.html"> <img src="./images/rpnew.png" alt="logo" class="logo" /> </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="menu-item "><a href="./index.html">Businesses</a></li>
+        <li class="menu-item"><a href="./career.html">Career</a></li>
+        <li class="menu-item"><a href="./about_us.html">About Us</a></li>
+        <li class="menu-item "><a href="./media.html">Media</a></li>
+        <li class="menu-item"><a href="./contact.html">Contact</a></li>
+        <li>
+          <div class="wrapper">
+            <div class="box">
+              <div class="search-area">
+                <div class="search_icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" placeholder="search here">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="more">
+      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+  </header>
+
+  <div class="nav-line">
+    <div class="line">
+      <span class="pointer"></span>
+      <ul>
+        <a href="#business_overview_sec1">
+          <li class="point active">
+            <div class="label">Home</div>
+          </li>
+        </a>
+        <a href="#business_overview_sec2">
+          <li class="point">
+            <div class="label">Latest News</div>
+          </li>
+        </a>
+        <a href="#business_overview_sec3">
+          <li class="point">
+            <div class="label">Social Media</div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <main>
+
+    <!------------------- Section 1 ------------------->
+    <!-- <div class="business_overviews_sect1" id=""> -->
+      <section data-index="1" class="section1 " id="business_overview_sec1" data-snap-point>
+        <img class="buiseness_dot" src="./images/dot.svg">
+        <div class="content">
+          <button type="button" class="buisenss_btn"> Buiseness Overview </button>
+          <h1 class="bg_text_contact">
+            BUSINESS
+          </h1>
+          <div class="">
+            <div class="content_main">
+              <h2 class="gradient_text title"> We are expanding our business on <br> a global scale, as the best
+                <br>business
+                partner
+              </h2>
+              <p> Founded by Mr. Sudhakar Rupnar in 2020 <br> the RedPhantom group is a global enterprise, <br>
+                headquartered in India, comprising <br> 4 comapnies across India </p>
+            </div>
+          </div>
+
+          <div class="arrow_right">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <h1 class="about_text_section1"> OVERVIEW </h1>
+      </section>
+    <!-- </div> -->
+    <!------------------- Section 2------------------->
+    <section data-index="2" class="about__section2" id="business_overview_sec2" data-snap-point>
+      <h1 class="
+      "> FOUNDER</h1>
+      <div class="position-relative">
+        <p> Founded by Mr.Sudhakar Rupnar in 2020, the RedPhantom group is a global enterprise,
+          headquartered in India, comprising 4 companies across india. </p>
+        <p> The group operates in more than 4 countries across six continents, with a mission 'To improve the
+          quality of life of the communities we serve globally, through long-term stakeholder value creation
+          based on Leadership with Trust'.</p>
+        <p>
+          RedPhantom Capital is the principal investment holding company and promoter of RedPhantom
+          companies. Sixty-six percent of the equity share capital of RedPhantom Capital is held by
+          philanthropic trusts, which support education, health, livelihood generation and art and culture
+        </p>
+        <p>
+          In 2021-22, the revenue of RedPhantom companies, taken together, was $1 billion (INR 10 crore)
+          These companies collectively employ over 500 people.
+        </p>
+        <p>
+          Each RedPhantom company or enterprise operates independently under the guidance and
+          supervision of its own board of directors. There are 29 publicly-listed RedPhantom enterprises with
+          a combined market capitalisation of $311 billion (INR 23.6 trillion) as on March 31, 2022
+        </p>
+
+        <p>
+          Companies include RedPhantom Tech Novelty (IT), RedPhantom Transport, RedPhantom capital
+          (Finance), and RedPhantom College Shopee (E-Commerce)
+        </p>
+
+        <div class="pos_of_circle">
+          <img src="images/circle.svg" class="circle_image1" alt="circle_image">
+        </div>
+      </div>
+      <h2 class=" back_sud_text">MR. SUDHAKAR RUPNAR</h2>
+      <h2 class=" back_2020_text">2020</h2>
+      <h1 class="about_text_bottom"> COMPANIES </h1>
+    </section>
+    <!------------------- CAROUSAL ------------------->
+    <section data-index="3" class="section3" id="business_overview_sec3" data-snap-point>
+      <div class="section3_also_read_btn also_read_carousel">
+        <h1 class="gradient_text section3_h1">Also Read </h1>
+        <div class="" id="sec3_btn_animation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div style="width: 850px;
+      margin-left: 10%;" class="pt-5 ">
+        <div class="row">
+          <div class="col-12" id="carousal_card">
+            <div class="left_arrow">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+            </div>
+
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-12" id="carousel_col_12">
+                      <div class="card mb-3" id="slider_card">
+                        <img class="img-fluid" id="img-fluid" alt="100%x280" src="./images/fin_slider1.jpg" />
+                        <div class="card-body" id="card-body">
+                          <div class="card-content" id="card-content">
+                            <h1 class="card-title" id="card-title"> RedPhantom Capital </h1>
+                            <p class="card-text" id="card-text">
+                              For more than 40 years, RP Transportation has provided safe, reliable, affordable
+                              transportation services to cities, countries, municipalties and other jurisdiction
+                              entities, as well as private corporation, non profit agencies, and community
+                              organisations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-12" id="carousel_col_12">
+                      <div class="card mb-3" id="slider_card">
+                        <img class="img-fluid" id="img-fluid" alt="100%x280" src="./images/fin_slider1.jpg" />
+                        <div class="card-body" id="card-body">
+                          <div class="card-content" id="card-content">
+                            <h1 class="card-title" id="card-title"> RedPhantom Capital </h1>
+                            <p class="card-text" id="card-text">
+                              For more than 40 years, RP Transportation has provided safe, reliable, affordable
+                              transportation services to cities, countries, municipalties and other jurisdiction
+                              entities, as well as private corporation, non profit agencies, and community
+                              organisations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-12" id="carousel_col_12">
+                      <div class="card mb-3" id="slider_card">
+                        <img class="img-fluid" id="img-fluid" alt="100%x280" src="./images/fin_slider1.jpg" />
+                        <div class="card-body" id="card-body">
+                          <div class="card-content" id="card-content">
+                            <h1 class="card-title" id="card-title"> RedPhantom Capital </h1>
+                            <p class="card-text" id="card-text">
+                              For more than 40 years, RP Transportation has provided safe, reliable, affordable
+                              transportation services to cities, countries, municipalties and other jurisdiction
+                              entities, as well as private corporation, non profit agencies, and community
+                              organisations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-12" id="carousel_col_12">
+                      <div class="card mb-3" id="slider_card">
+                        <img class="img-fluid" id="img-fluid" alt="100%x280" src="./images/fin_slider1.jpg" />
+                        <div class="card-body" id="card-body">
+                          <div class="card-content" id="card-content">
+                            <h1 class="card-title" id="card-title"> RedPhantom Capital </h1>
+                            <p class="card-text" id="card-text">
+                              For more than 40 years, RP Transportation has provided safe, reliable, affordable
+                              transportation services to cities, countries, municipalties and other jurisdiction
+                              entities, as well as private corporation, non profit agencies, and community
+                              organisations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="right_arrow">
+              <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------- FOOTER ------------------->
+    <footer data-snap-point>
+      <div class="company-info">
+        <div class="logo-container">
+          <a href="./index.html"> <img src="./images/rpnew.png" alt="logo2" class="logo" /> </a>
+          𝓛𝓮𝓽'𝓼 𝓰𝓮𝓽 𝓱𝓲𝓰𝓱
+        </div>
+        <div class="d-flex justify-content-between ">
+          <div>
+            <p class="m-2">Follow us on</p>
+          </div>
+          <div class="rounded-circle m-2" id="circle_icon"><a href="https://www.instagram.com/redphantomgroup/"
+              target="_blank" class="text-light text-decoration-none "> <i
+                class="fa-brands fa-instagram icon_col"></i></a>
+          </div>
+
+          <div class="rounded-circle m-2" id="circle_icon"><a
+              href="https://www.facebook.com/redphantomgroup/?ref=pages_you_manage" target="_blank"
+              class="text-light text-decoration-none "> <i class="fa-brands fa-facebook-f icon_col"></i></a>
+          </div>
+
+          <div class="rounded-circle m-2" id="circle_icon"><a href="#" class="text-light text-decoration-none "> <i
+                class="fa-brands fa-linkedin-in icon_col"></i></a>
+          </div>
+
+          <div class="rounded-circle m-2" id="circle_icon"><a href="https://twitter.com/redphantomgroup" target="_blank"
+              class="text-light text-decoration-none "> <i class="fa-brands fa-twitter icon_col"></i></a>
+          </div>
+
+          <div class="rounded-circle m-2" id="circle_icon"><a
+              href="https://www.youtube.com/channel/UC3CbP6ZDRtyvweBc3966lxw" target="_blank"
+              class="text-light text-decoration-none "> <i class="fa-brands  fa-youtube icon_col"></i></a>
+          </div>
+        </div>
+
+        <div class="subscribe d-flex justify-content-center align-items-center">
+          <input type="email" placeholder="Enter your email to subscribe" class="form-control no-border">
+          <button class="subscribe_btn"><i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="fifthsec container bg-black">
+
+        <div class="row container">
+          <div class="col-md-6 col-lg-3">
+            <h6 class="gradient_text">Business</h6>
+            <ul class="list-unstyled">
+              <a href="./technology.html" class="text-light text-decoration-none">
+                <li>Technology</li>
+              </a>
+              <a href="./transport.html" class="text-light text-decoration-none">
+                <li>Transport</li>
+              </a>
+              <a href="./finance.html" class="text-light text-decoration-none">
+                <li>Finance</li>
+              </a>
+              <a href="./shopee.html" class="text-light text-decoration-none">
+                <li>E-commerce</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6 class="gradient_text">Community</h6>
+            <ul class="list-unstyled">
+              <a href="#" class="text-light text-decoration-none">
+                <li>Education</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>Empowermant</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>Environment</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>Health</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6 class="gradient_text">About</h6>
+            <ul class="list-unstyled">
+              <a href="#" class="text-light text-decoration-none">
+                <li>Founder</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>chairman</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>team</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6 class="gradient_text">News</h6>
+            <ul class="list-unstyled">
+              <a href="#" class="text-light text-decoration-none">
+                <li>Photos</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>Videos</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>Downloads</li>
+              </a>
+              <a href="#" class="text-light text-decoration-none">
+                <li>News</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <h1 class="bg_text_footer"> REDPHANTOM <br> INDUSTRIES </h1>
+      </div>
+      <div class="copyrights">
+        2019-2024 Redphantom Industires Private Limited. All Rights Reserved.
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="scripts/jquery.snapScroll.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<!-- Online Version / CDN Version -->
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- Online Version / CDN Version -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<link rel="icon" href="images/" />
+</head>
+
+<body id="business-media">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!------------------- NAVBAR ------------------->
+	<header id="header">
+		<div class="logo-container">
+			<a href="./index.html">
+				<img src="./images/rpnew.png" alt="logo" class="logo" />
+			</a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="menu-item">
+					<a href="./index.html">Business</a>
+				</li>
+				<li class="menu-item">
+					<a href="./career.html">Career</a>
+				</li>
+				<li class="menu-item">
+					<a href="./about_us.html">About Us</a>
+				</li>
+				<li class="menu-item active"><a href="./media.html">Media</a></li>
+				<li class="menu-item">
+					<a href="./contact.html">Contact</a>
+				</li>
+				<li>
+					<div class="wrapper">
+						<div class="box">
+							<div class="search-area">
+								<div class="search_icon">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</div>
+								<input type="text" placeholder="search here" />
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="more">
+			<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+		</div>
+	</header>
+	<div class="nav-line">
+		<div class="line">
+			<span class="pointer"></span>
+			<ul>
+				<a href="#home">
+					<li class="point active">
+						<div class="label">Home</div>
+					</li>
+				</a>
+				<a href="#latest-news">
+					<li class="point">
+						<div class="label">Latest News</div>
+					</li>
+				</a>
+				<a href="#social-media">
+					<li class="point">
+						<div class="label">Social Media</div>
+					</li>
+				</a>
+				<a href="#gallary">
+					<li class="point">
+						<div class="label">Gallary</div>
+					</li>
+				</a>
+
+				<!-- <a href="#brands">
+						<li class="point"><div class="label">Brands</div></li>
+					</a> -->
+			</ul>
+		</div>
+	</div>
+	<main class="vw-100 vh-100 bg-black overflow-y-auto media-main">
+		<section data-snap-point id="home"
+			class="w-100 min-vh-100 bg-black position-relative d-inline-flex justify-content-end align-items-center"
+			data-index="1" style="
+					background: url('./images/dot.png'),
+						url('./images/home.jpg');
+						background-size: 100% 100%;
+				">
+			<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-2">
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="top: 10%; right: 10%">
+					Contact
+				</div>
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="bottom: 10%; right: 10%">
+					Follow Us
+				</div>
+			</div>
+			<div class="content pb-5 pb-md-0 w-100 position-relative z-2 d-inline-flex flex-column justify-content-end align-items-end gap-2"
+				style="max-width: 750px;height:auto !important; padding:0px;">
+				<div class="d-inline fs-4 fw-bold text-light" style="
+							padding: 0.03rem 0.75rem;
+							border: 0.15rem solid cyan;
+						">
+					Media
+				</div>
+				<div
+					class="px-2 px-md-4 py-2 border border-3 border-top-0 border-bottom-0 border-start-0 border-2 d-inline-flex flex-column justify-content-end align-items-end">
+					<div class="title highlight fs-2 fw-bold text-end">
+						Media & News
+					</div>
+					<div class="description w-75 fs-6 text-light text-end">
+						Get the latest news and feature stories on our
+						business, community initiatives, heritage and
+						people. Scroll to read
+					</div>
+				</div>
+			</div>
+			<div class="arrow position-absolute" style="top: 98%; right: 5%; transform: translate(0, -100%)">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</section>
+		<section data-snap-point id="latest-news"
+			class="w-100 min-vh-100 py-2 bg-black position-relative d-inline-flex flex-wrap flex-column justify-content-md-center justify-content-center align-items-start gap-1"
+			data-index="2">
+			<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-3">
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							top: 57%;
+							left: 11%;
+							/* transform: rotate(-90deg) translate(-50%, -20%); */
+						">
+					Latest News
+				</div>
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							top: 0%;
+							right: 0%;
+							transform: rotate(-90deg) translate(-55%, 137%);
+						">
+					Latest News
+				</div>
+			</div>
+			<div class="header z-3">
+				<div class="ps-md-5 title position-relative d-flex justify-content-center align-items-center">
+					<div class="highlight fs-2 fw-bold text-light">
+						Latest News
+					</div>
+					<div class="arrow position-relative" style="transform: translate(250%, 0) rotate(-90deg)">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="content w-100 position-relative z-3 flex-fill d-flex justify-content-evenly align-items-stretch gap-4 overflow-hidden"
+				style="height:auto !important; padding:0px;flex-direction: row;">
+				<div class="flex-4 row row-cols-1 row-cols-md-3 g-4 mt-2">
+					<div class="col">
+						<div class="card bg-transparent text-light">
+							<div class="ratio ratio-16x9">
+								<img src="./images/news-feed.png" class="card-img-top" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title fs-7 fw-bold">
+									RedPhantom Capital Optimistic about
+									rapid growth, digital edeavours,new
+									tactics and new offers.
+								</h5>
+								<p class="card-title fs-9 media-sec-title">
+									India financial sector is growing
+									rapidly with bosth existing firms and
+									new companies. The industry includes
+									commercial banks, insurance businesses,
+									non-banking financial companies, co-ops,
+									pension funds, mutual funds and other
+									small entities.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card bg-transparent text-light">
+							<div class="ratio ratio-16x9">
+								<img src="./images/news-feed.png" class="card-img-top" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title fs-7 fw-bold">
+									Innovative Rivalry - In World
+								</h5>
+								<p class="card-title fs-9 media-sec-title">
+									Innovation is the art of Immagination or
+									a new way of doing something or even a
+									new way of thinking. The 8 essential of
+									Innovation are - Aspire, Choose,
+									Discover, Evolve, Accelerate, Scale,
+									Extend and Mobilize. It is about
+									starting something new, small ventures,
+									a new enterprise.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card bg-transparent text-light">
+							<div class="ratio ratio-16x9">
+								<img src="./images/news-feed.png" class="card-img-top" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title fs-7 fw-bold">
+									I believe RedPhantom will definitely
+									leads young people towards the better
+									world. - Mr. Sudhakar Rupnar(Founder)
+								</h5>
+								<p class="card-title fs-9 media-sec-title">
+									On the occasion of company opening, the
+									Founder said that We achieve our
+									customers dreams...
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<aside
+					class="align-self-stretch w-100 d-none d-lg-flex flex-column justify-content-start align-items-center">
+					<div
+						class="readmore text-light text-uppercase d-inline-flex justify-content-center align-items-center gap-3 fs-5">
+						Readmore
+						<div class="ratio ratio-1x1" style="width: 2rem">
+							<img class="read_more_btn" src="./images/button (1).svg" />
+						</div>
+					</div>
+					<div class="flex-fill w-100 h-100 d-flex flex-column align-items-center gap-2">
+						<div class="w-100 ratio ratio-1x1" style="max-width: 175px">
+							<img class="d-block w-100 h-100 position-absolute" src="./images/fin_slider1.jpg"
+								style="filter: brightness(50%)" />
+							<div class="p-2 text-light d-flex justify-content-center align-items-end fw-bold">
+								Innovation is the need of today's time.
+							</div>
+						</div>
+						<div class="w-100 ratio ratio-1x1" style="max-width: 175px">
+							<img class="d-block w-100 h-100 position-absolute" src="./images/fin_slider1.jpg"
+								style="filter: brightness(50%)" />
+							<div class="p-2 text-light d-flex justify-content-center align-items-end fw-bold">
+								Innovation is the need of today's time.
+							</div>
+						</div>
+						<div class="w-100 ratio ratio-1x1" style="max-width: 175px">
+							<img class="d-block w-100 h-100 position-absolute" src="./images/fin_slider1.jpg"
+								style="filter: brightness(50%)" />
+							<div class="p-2 text-light d-flex justify-content-center align-items-end fw-bold">
+								Innovation is the need of today's time.
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<section id="social-media" data-snap-point
+			class="w-100 min-vh-100 py-2 bg-black position-relative d-inline-flex flex-wrap flex-column align-items-end gap-1"
+			data-index="3">
+			<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-3">
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							top: 5%;
+							left: 25%;
+							/* transform: rotate(-90deg) translate(-50%, -20%); */
+						">
+					Social Media
+				</div>
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							top: 50%;
+							left: 0%;
+							transform: rotate(-90deg);
+						">
+					Address
+				</div>
+			</div>
+			<div class="header z-3 align-self-end">
+				<div class="title position-relative d-flex justify-content-center align-items-center"
+					style="padding-right: 4rem">
+					<div class="highlight fs-2 fw-bold text-light">
+						Social Media
+					</div>
+					<div class="arrow position-relative" style="transform: translate(250%, 0) rotate(-90deg)">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="content flex-fill w-100 h-100 position-relative z-3 d-flex justify-content-center align-items-start pb-4"
+				style="height:auto !important; padding:0px;flex-direction: row;">
+				<div
+					class="w-100 h-100 flex-fill row row-cols-auto g-2 g-md-4 g-lg-3 gap-2 gap-md-4 gap-lg-3 d-flex justify-content-center align-items-stretch flex-wrap">
+					<div class="card-height align-self-stretch col-12 col-md-5 col-lg-5 card d-flex flex-column flex-md-row justify-content-center align-items-md-stretch p-0 overflow-hidden bg-transparent"
+						style="max-width: 535px;">
+						<div class="thumbnail ratio ratio-1x1 bg-transparent" style="max-width: 300px">
+							<img src="./images/news-feed.png" class="d-block w-100 h-100" />
+						</div>
+						<div class="card-body ratio ratio-1x1 info">
+							<div class="card-body d-flex flex-column justify-content-around align-items-start bg-white">
+								<span class="hastag fw-bold">#RedPhantom Tech Novelty</span>
+								<h5 class="card-title fs-6 fw-bold highlight text-center">
+									Tanaji More : India's Youngest CEO : The
+									person behind the success
+								</h5>
+								<p class="card-text fw-medium ps-3 highlight-border border border-3 border-top-0 border-end-0 border-bottom-0"
+									style="font-size: 0.85rem;color:black;">
+									We do not charge / accept any amount or
+									security desposit from job seekers
+									during the selection process or while
+									inviting candidates for an intervoew.
+									Read disclaimer.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="align-self-stretch col-12 col-md-3 col-lg-3 bg-transparent card-height card d-flex justify-content-around align-content-center position-relative bg-transparent highlight-border border-3 card-body text-white"
+						style="max-width: 300px">
+						<h5
+							class="card-title fs-6 fw-bold ps-3 highlight-border border border-3 border-top-0 border-end-0 border-bottom-0">
+							Make Changes in a future:
+						</h5>
+						<p class="card-text fw-medium" style="font-size: 0.85rem">
+							Employees at RedPhantom work on new ideas,
+							consequences & new technologies, they often
+							achieve global firsts as a result of thei
+							effort. Our technology is improving day by day
+							and tjis will increadbly change on life on
+							human.
+						</p>
+					</div>
+					<div class="align-self-stretch col-12 col-md-2 col-lg-2 card card-height position-relative p-0 bg-transparent"
+						style="max-width: 200px">
+						<div class="thumbnail w-100 h-100">
+							<img src="./images/news-feed.png" class="d-block w-100 h-100" />
+						</div>
+					</div>
+					<div class="align-self-stretch col-12 col-md-2 col-lg-2 bg-transparent card card-height d-flex justify-content-around align-content-center position-relative bg-transparent highlight-border border-3 card-body text-white"
+						style="max-width: 200px">
+						<h5
+							class="card-title fs-6 fw-bold ps-3 highlight-border border border-3 border-top-0 border-end-0 border-bottom-0">
+							Make Changes in a future:
+						</h5>
+						<p class="card-text fw-medium" style="font-size: 0.85rem">
+							Employees at RedPhantom work on new ideas,
+							consequences & new technologies, they often
+							achieve global firsts as a result of thei
+							effort. Our technology is
+						</p>
+					</div>
+					<div class="align-self-stretch col-12 col-md-3 col-lg-3 card card-height position-relative p-0 bg-transparent"
+						style="max-width: 300px">
+						<div class="thumbnail w-100 h-100">
+							<img src="./images/news-feed.png" class="d-block w-100 h-100" />
+						</div>
+					</div>
+					<div class="align-self-stretch col-12 col-md-5 col-lg-5 card card-height d-flex flex-column flex-md-row justify-content-center align-items-md-stretch p-0 overflow-hidden bg-transparent"
+						style="max-width: 535px">
+						<div class="thumbnail ratio ratio-1x1 bg-transparent" style="max-width: 300px">
+							<img src="./images/news-feed.png" class="d-block w-100 h-100" />
+						</div>
+						<div class="card-body ratio ratio-1x1">
+							<div class="card-body d-flex flex-column justify-content-around align-items-start"
+								style="background-color: #9d00fa">
+								<span class="hastag fw-bold">#RedPhantom Tech Novelty</span>
+								<h5 class="card-title fs-6 fw-bold text-white text-center">
+									Tanaji More : India's Youngest CEO : The
+									person behind the success
+								</h5>
+								<p class="card-text fw-medium ps-3 text-white highlight-border border border-3 border-top-0 border-end-0 border-bottom-0"
+									style="font-size: 0.85rem">
+									We do not charge / accept any amount or
+									security desposit from job seekers
+									during the selection process or while
+									inviting candidates for an intervoew.
+									Read disclaimer.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="gallary" data-snap-point
+			class="w-100 min-vh-100 py-2 bg-black position-relative d-inline-flex flex-wrap flex-column justify-content-md-center justify-content-center align-items-start gap-3"
+			data-index="4">
+			<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-3">
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							bottom: 18%;
+							left: 30%;
+							/* transform: rotate(-90deg) translate(-50%, -20%); */
+						">
+					GET in touch
+				</div>
+				<div class="word position-absolute fw-bold text-uppercase text-light" style="
+							bottom: 16%;
+							left: 0%;
+							transform: rotate(-90deg);
+						">
+					GALLARY
+				</div>
+			</div>
+			<div class="header z-3">
+				<div class="ps-md-5 title position-relative d-flex justify-content-center align-items-center">
+					<div class="highlight fs-2 fw-bold text-light">
+						Gallary
+					</div>
+					<div class="arrow position-relative" style="transform: translate(250%, 0) rotate(-90deg)">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="content content-2 w-100 position-relative z-3 flex-fill row row-cols-1 row-cols-md-3 g-4 overflow-hidden">
+				<div class="col">
+					<div
+						class="w-100 h-100 overflow-hidden position-relative d-flex flex-column justify-content-end align-items-start ratio ratio-16x9 border-3 logobox-media highlight-border">
+						<img src="./images/shopee_slider.jpg" class="d-block w-100 h-100 position-absolute" />
+						<div
+							class="d-flex flex-column justify-content-end align-items-center text-uppercase fs-2 fw-bold text-light position-relative z-3 p-1 p-md-2">
+							Logos
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="w-100 h-100 overflow-hidden position-relative d-flex flex-column justify-content-end align-items-start ratio ratio-16x9 border-3 logobox-media highlight-border">
+						<img src="./images/shopee_slider.jpg" class="d-block w-100 h-100 position-absolute" />
+						<div
+							class="d-flex flex-column justify-content-end align-items-center text-uppercase fs-2 fw-bold text-light position-relative z-3 p-1 p-md-2">
+							Logos
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="w-100 h-100 overflow-hidden position-relative d-flex flex-column justify-content-end align-items-start ratio ratio-16x9 border-3 logobox-media highlight-border">
+						<img src="./images/shopee_slider.jpg" class="d-block w-100 h-100 position-absolute" />
+						<div
+							class="d-flex flex-column justify-content-end align-items-center text-uppercase fs-2 fw-bold text-light position-relative z-3 p-1 p-md-2">
+							Logos
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header z-3 align-self-end">
+				<div class="title position-relative d-flex justify-content-center align-items-center"
+					style="padding-right: 4rem">
+					<div class="highlight fs-2 fw-bold text-light">
+						Get in Touch
+					</div>
+					<div class="arrow position-relative" style="transform: translate(250%, 0) rotate(-90deg)">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="content content-2 w-100 position-relative z-3 d-flex justify-content-center align-items-center pb-4">
+				<div
+					class="h-100 w-100 px-2 py-4 p-md-4 d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-5 border border-3 highlight-border">
+					<div class="col d-flex flex-column justify-content-evenly align-items-center gap-2">
+						<div class="fw-bold text-uppercase text-light text-center" style="font-size: 1.2rem">
+							Subscribe to News Letter
+						</div>
+						<div class="subsrcibe d-block w-50 d-flex justify-content-evenly align-items-center gap-2 border border-2 px-2 py-2 text-light"
+							style="
+									border: 3px solid purple !important;
+									background: linear-gradient(
+										to right,
+										rgb(128, 0, 128),
+										rgba(0, 0, 0)
+									);
+								">
+							<input type="email" placeholder="Enter email to subscribe"
+								class="w-100 bg-transparent border-0 fw-bold text-light" style="font-size: 1rem" />
+							<button class="bg-transparent border-0">
+								<i class="fa-solid fa-arrow-right text-light"></i>
+							</button>
+						</div>
+					</div>
+					<div class="divider border border-2 w-0 border-top-0 border-start-0"></div>
+					<div class="col d-flex flex-column justify-content-evenly align-items-center gap-2">
+						<div class="fw-bold text-uppercase text-light text-center" style="font-size: 1.2rem">
+							For Injury
+						</div>
+						<div class="fw-bold text-uppercase text-light text-center" style="font-size: 0.9rem">
+							Toll free : +91 917 291 2622<br /><a
+								href="https://help@redphantom.com">https://help@redphantom.com</a>
+						</div>
+						<div
+							class="w-100 readmore text-light text-uppercase d-inline-flex justify-content-center align-items-center gap-3 fs-5">
+							Readmore
+							<div class="ratio ratio-1x1" style="width: 2rem">
+								<img class="read_more_btn" src="./images/button (1).svg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer data-snap-point>
+			<div class="company-info">
+				<div class="logo-container">
+					<a href="./index.html">
+						<img src="./images/rpnew.png" alt="logo" class="logo" />
+					</a>
+					𝓛𝓮𝓽'𝓼 𝓰𝓮𝓽 𝓱𝓲𝓰𝓱
+				</div>
+				<div class="d-flex justify-content-between">
+					<div>
+						<p class="m-2">Follow us on</p>
+					</div>
+					<div class="rounded-circle m-2" id="circle_icon">
+						<a href="#" class="text-light text-decoration-none">
+							<i class="fa-brands fa-instagram icon_col"></i></a>
+					</div>
+
+					<div class="rounded-circle m-2" id="circle_icon">
+						<a href="#" class="text-light text-decoration-none">
+							<i class="fa-brands fa-facebook-f icon_col"></i></a>
+					</div>
+
+					<div class="rounded-circle m-2" id="circle_icon">
+						<a href="#" class="text-light text-decoration-none">
+							<i class="fa-brands fa-whatsapp icon_col"></i></a>
+					</div>
+
+					<div class="rounded-circle m-2" id="circle_icon">
+						<a href="#" class="text-light text-decoration-none">
+							<i class="fa-brands fa-twitter icon_col"></i></a>
+					</div>
+
+					<div class="rounded-circle m-2" id="circle_icon">
+						<a href="#" class="text-light text-decoration-none">
+							<i class="fa-brands fa-youtube icon_col"></i></a>
+					</div>
+				</div>
+
+				<div class="subscribe d-flex justify-content-center align-items-center">
+					<input type="email" placeholder="Enter your email to subscribe" class="form-control no-border" />
+					<button class="subscribe_btn">
+						<i class="bi bi-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="fifthsec container bg-black">
+				<div class="row container">
+					<div class="col-md-6 col-lg-3">
+						<h6 class="gradient_text">Business</h6>
+						<ul class="list-unstyled">
+							<a href="./technology.html" class="text-light text-decoration-none">
+								<li>Technology</li>
+							</a>
+							<a href="./transport.html" class="text-light text-decoration-none">
+								<li>Transport</li>
+							</a>
+							<a href="./finance.html" class="text-light text-decoration-none">
+								<li>Finance</li>
+							</a>
+							<a href="./shopee.html" class="text-light text-decoration-none">
+								<li>E-commerce</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h6 class="gradient_text">Community</h6>
+						<ul class="list-unstyled">
+							<a href="#" class="text-light text-decoration-none">
+								<li>Education</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>Empowermant</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>Environment</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>Health</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h6 class="gradient_text">About</h6>
+						<ul class="list-unstyled">
+							<a href="#" class="text-light text-decoration-none">
+								<li>Founder</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>chairman</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>team</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h6 class="gradient_text">News</h6>
+						<ul class="list-unstyled">
+							<a href="#" class="text-light text-decoration-none">
+								<li>Photos</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>Videos</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>Downloads</li>
+							</a>
+							<a href="#" class="text-light text-decoration-none">
+								<li>News</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+				<h1 class="bg__text__footer">REDPHANTOM INDUSTRIES</h1>
+			</div>
+			<div class="copyrights">
+				2019-2024 Redphantom Industires Private Limited. All Rights
+				Reserved.
+			</div>
+		</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"
+		integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+		integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+		integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="scripts/jquery.snapScroll.min.js"></script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>

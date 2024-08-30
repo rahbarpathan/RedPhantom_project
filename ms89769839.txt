@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "redphantomgroup.com",
+  "Id": "65518748-99f3-431b-8685-e44b67f48d9e"
+}
